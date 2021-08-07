@@ -22,6 +22,7 @@ const Contact = () => {
 
                     </textarea>
                 </label>
+                <input type="submit" value="Contact Me" />
             </form>
         </Layout>
     )

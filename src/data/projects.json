@@ -4,20 +4,20 @@
         "description": "This was my first project",
         "githubLink": "https://github.com/ssh930526",
         "deployedLink": "https://supercoolsite.com",
-        "image": "../images/image-one.png"
+        "image": "images/project-one.png"
     },
     {
         "title": "Second Project",
         "description": "This was my second project",
         "githubLink": "https://github.com/ssh930526",
         "deployedLink": "https://supercoolsite.com",
-        "image": "../images/image-two.png"
+        "image": "images/project-two.png"
     },
     {
         "title": "Third Project",
         "description": "This was my third project",
         "githubLink": "https://github.com/ssh930526",
         "deployedLink": "https://supercoolsite.com",
-        "image": "../images/image-three.png"
+        "image": "images/project-three.png"
     }
 ]

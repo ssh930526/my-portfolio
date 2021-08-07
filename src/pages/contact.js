@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 const Contact = () => {
     return (
         <Layout>
+            <Head page="Contact" />
             <h1>Contact</h1>
             <form name="contact" method="POST" data-netlify="ture">
                 <input type="hidden"  name="form-name" value="contact" />

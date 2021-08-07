@@ -28,7 +28,7 @@ const Contact = () => {
             header: {
                 'Content-type': 'application/x-www-form-urlencoded'
             },
-            body: encode(formState)
+            body: `form-name=contact&name=${encodeURIComponent(formState.name)}&email=${encodeURIComponent(formState.email)}&message=${encodeURIComponent(formState.message)}`
         })
         setFormState({
             name: "",

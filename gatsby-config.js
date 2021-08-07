@@ -2,11 +2,15 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "SihuiJS",
-    author: "Sihui Shen"
+    author: "Sihui Shen",
+    description: "A Personal Website For Sihui Shen",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -22,5 +26,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: "./src/posts"
+      }
+    },
+    "gatsby-transformer-remark"
   ],
 };

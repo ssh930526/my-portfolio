@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import { navigate } from "gatsby-link"
+import { StyledContact } from "../styles/styled-components"
 
 
 const Contact = () => {
@@ -37,45 +38,49 @@ const Contact = () => {
         navigate('/')
     }
     return (
-        <Layout>
-            <Head page="Contact" />
-            <h1>Contact</h1>
-            <form name="contact"  data-netlify="ture" onSubmit={handleSubmit}>
-                <input 
-                    type="hidden"
-                    name="form-name" 
-                    value="contact" />
-                <label>
-                    Name
+        <StyledContact>
+            <Layout>
+                <Head page="Contact" />
+                <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Indie+Flower&family=PT+Sans+Narrow&family=Roboto:ital,wght@1,900&family=Teko:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet"></link>
+                <h1 className="contact">Welcome To Leave Message To Me </h1>
+                <p></p>
+                <form className="form" name="contact"  data-netlify="ture" onSubmit={handleSubmit}>
                     <input 
-                        type="text" 
-                        name="name" 
-                        placeholder="First Name  Last Name"
-                        onChange={handleChnage}
-                        value={formState.name} />
-                </label>
-                <label>
-                    Email
-                    <input 
-                        type="emial" 
-                        name="email" 
-                        placeholder="Email Address"
-                        onChange={handleChnage}
-                        value={formState.email} />
-                </label>
-                <label>
-                    Message
-                    <textarea 
-                        name="message" 
-                        placeholder="Hey waht's up"
-                        onChange={handleChnage}
-                        value={formState.message}>
+                        type="hidden"
+                        name="form-name" 
+                        value="contact" />
+                    <label>
+                        Name
+                        <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="First Name  Last Name"
+                            onChange={handleChnage}
+                            value={formState.name} />
+                    </label>
+                    <label>
+                        Email
+                        <input 
+                            type="emial" 
+                            name="email" 
+                            placeholder="Email Address"
+                            onChange={handleChnage}
+                            value={formState.email} />
+                    </label>
+                    <label>
+                        Message
+                        <textarea 
+                            name="message" 
+                            placeholder="Hey waht's up"
+                            onChange={handleChnage}
+                            value={formState.message}>
 
-                    </textarea>
-                </label>
-                <input type="submit" value="Contact Me" />
-            </form>
-        </Layout>
+                        </textarea>
+                    </label>
+                    <input type="submit" value="Contact Me" />
+                </form>
+            </Layout>
+        </StyledContact>
     )
 }
 

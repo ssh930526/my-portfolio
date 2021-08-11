@@ -1,23 +1,23 @@
 [
     {
         "title": "First Project",
-        "description": "This was my first project",
-        "githubLink": "https://github.com/ssh930526",
-        "deployedLink": "https://supercoolsite.com",
+        "description": "This was my first project for Beer!",
+        "githubLink": "https://github.com/ssh930526/project1-Beer",
+        "deployedLink": "https://ssh930526.github.io/project1-Beer/",
         "image": "images/project-one.png"
     },
     {
         "title": "Second Project",
-        "description": "This was my second project",
-        "githubLink": "https://github.com/ssh930526",
-        "deployedLink": "https://supercoolsite.com",
+        "description": "This was my second project for Beach!",
+        "githubLink": "https://github.com/ssh930526/project3-beach-frontend",
+        "deployedLink": "https://project3-beach.netlify.app/",
         "image": "images/project-two.png"
     },
     {
         "title": "Third Project",
-        "description": "This was my third project",
-        "githubLink": "https://github.com/ssh930526",
-        "deployedLink": "https://supercoolsite.com",
+        "description": "This was my third project for Online School!",
+        "githubLink": "https://github.com/jchoi192/on-edge",
+        "deployedLink": "https://onedgeweb.herokuapp.com/",
         "image": "images/project-three.png"
     }
 ]

@@ -1,15 +1,42 @@
-import React from "react"
+import React, { useState, useEffect }from "react"
 import { Link } from "gatsby"
 
 import { StyledHeader  } from "../styles/styled-components"
 
-const Header = (props) => (
+import Burger from './burger';
+import Nav from './nav';
+
+const Header = (props) => {
+    const [open, setOpen] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(true);
+    useEffect(() => {
+      const mediaQuery = window.matchMedia('(max-width: 1065px)');
+  
+      mediaQuery.addEventListener('change', handleMediaQueryChange);
+  
+      handleMediaQueryChange(mediaQuery);
+  
+      return () => {
+        mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      };
+    }, []);
+  
+    const handleMediaQueryChange = (mediaQuery) => {
+      if (mediaQuery.matches) {
+        setIsSmallScreen(true);
+      } else {
+        setIsSmallScreen(false);
+      }
+    };
+  
+    return (
     <StyledHeader>
         <h1>
             <Link to="/">
                 Sihui Shen
             </Link>
         </h1>
+        {!isSmallScreen ? (
         <nav>
             <ul>
                 <li>
@@ -29,7 +56,14 @@ const Header = (props) => (
                 </li>
             </ul>
         </nav>
+        ) : (
+            <>
+            <Nav open={open} setOpen={setOpen} />
+            <Burger open={open} setOpen={setOpen} />
+          </>
+        )}
     </StyledHeader>
-)
+    );
+  }
 
 export default Header

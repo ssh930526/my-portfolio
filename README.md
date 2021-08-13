@@ -1,9 +1,10 @@
 # Sihui Shen' Personal Website
 
 
-Creating pages dynamically for our blog posts
+### Thank you for being here 🌹
 
-We need template component for gatsby to use to create each page
+### You can find all my project demos and code, learn a little about me, and connect!
 
-We need to generate a slug for each 
+### 🔗 [Click here](https://sihui-portfolio.netlify.app/) to get started
+
 

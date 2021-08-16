@@ -125,6 +125,7 @@ export const StyledContact = styled.div`
     .form {
         width: 200px;
         margin-left: 25rem;
+        padding-top: 40px;
     }
 
 `
@@ -133,7 +134,7 @@ export const StyledNav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #99cc99;
+  background: #d0d6d4;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
@@ -151,7 +152,7 @@ export const StyledNav = styled.nav`
     padding: 3rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #fff;
+    color: #d9af5b;
     text-decoration: none;
     transition: color 0.80s linear;
     @media (max-width: 576px) {
@@ -159,7 +160,7 @@ export const StyledNav = styled.nav`
       text-align: center;
     }
     &:hover {
-      color: #663399;
+      color: #e6d7b3;
     }
   }
 `

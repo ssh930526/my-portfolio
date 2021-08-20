@@ -9,7 +9,7 @@ function Nav({ open, setOpen }) {
       <Link to="/about" onClick={() => setOpen(false)}>About</Link>
       <Link to="https://drive.google.com/file/d/10HKV3FExs1zgiIHrRaCbI-QaFYYfaV7M/view?usp=sharing" onClick={() => setOpen(false)}>Resume</Link>
     </StyledNav>
-  )
+  ) 
 }
 
 export default Nav

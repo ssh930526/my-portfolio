@@ -16,7 +16,7 @@ const  About = (props) => (
             - Hi there! I'm Sihui, a full-stack developer Located in Orlando, FL.
          <br />
         </p>
-        <p className="introduce">My strong passion for developing is unmatched. I love to slove problems, design and code with challenging needs. You can consider me as a hardworking & friendly individual, Searching for a challenging new role where skills and knowledge can be applied. Thanks for reading my profile.
+        <p className="introduce">My strong passion for developing is unmatched. I love to slove problems, design and code with challenging needs. You can consider me as a hardworking & friendly individual, searching for a challenging new role where skills and knowledge can be applied. Thanks for reading my profile.
         </p>
         
          <br />

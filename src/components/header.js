@@ -55,7 +55,7 @@ const Header = (props) => {
                     <Link to="/contact">Contact Me</Link>
                 </li>
                 <li>
-                    <Link to="https://drive.google.com/file/d/10HKV3FExs1zgiIHrRaCbI-QaFYYfaV7M/view?usp=sharing">Resume</Link>
+                    <Link to="https://drive.google.com/file/d/1c9_CLWNC1nHluhRRX3PdfdXjJGxd-VbX/view?usp=sharing">Resume</Link>
                 </li>
             </ul>
         </nav>
